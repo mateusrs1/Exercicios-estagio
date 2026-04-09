@@ -10,24 +10,24 @@ public class PrimosLinear {
         System.out.println("Escolha o valor de N (>1): ");
         int n = input(scanner);
 
-        ArrayList<Integer> primos = primos(n);
+        ArrayList<Integer> primes = Primes(n);
 
-        System.out.println("Primos até " + n + ": " + primos);
+        System.out.println("Primos até " + n + ": " + primes);
     }
 
-    public static ArrayList<Integer> primos(int n) {
-        ArrayList<Integer> lista = new ArrayList<>();
+    public static ArrayList<Integer> Primes(int n) {
+        ArrayList<Integer> primeList = new ArrayList<>();
 
         for (int i = 2; i <= n; i++) {
-            if (ehPrimo(i)) {
-                lista.add(i);
+            if (isPrime(i)) {
+                primeList.add(i);
             }
         }
 
-        return lista;
+        return primeList;
     }
 
-    public static boolean ehPrimo(int num) {
+    public static boolean isPrime(int num) {
         if (num < 2) return false;
 
         for (int i = 2; i <= Math.sqrt(num); i++) {
