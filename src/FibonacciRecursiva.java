@@ -49,7 +49,7 @@ public class FibonacciRecursiva {
         }
 
         if (i > 5000) {
-            System.out.println("A sequência de fibonacci cresce assustadoramente rápido, mesmo usando BigInteger como tipo \nainda temos limites de stacks suportado pelo java, tente um valor menor");
+            System.out.println("A sequência de fibonacci cresce absurdamente rápido, mesmo usando BigInteger como tipo \nainda temos limites de stacks suportado pelo java, tente um valor menor");
             return input(scanner);
         }
 
